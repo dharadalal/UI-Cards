@@ -1,0 +1,106 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+:root{
+    --black : black;
+    --skyblue: skyblue;
+    --white:white;
+    --blue:BLUE;
+}
+body{
+    background-color: blanchedalmond;
+}
+.cards{
+    text-align: center;
+    font-size: 2rem;
+    padding:10px 10px;
+}
+.container{
+    margin: 15px 10px;
+}
+
+.row-container{
+    display:grid;
+    /* ahiya apde 300px minumn card contasiner size hase 300px ni nache jas enai */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:10px 10px;
+}
+.card-container{
+    background-color: var(--white);
+    width :100%;
+}
+.image{
+    width:100%;
+    object-fit: fill;
+    background-repeat: no-repeat; 
+}
+.heading{
+    margin-left: 10px;
+    font-size:2.0em;
+    font-weight: bold;
+}
+.content{
+    margin-left: 10px;
+    padding-top:10px;
+    font-weight: normal;
+    font-size: 1.4em;
+}
+.share-button{
+    margin-left: 10px;
+    color:var(--blue);
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding-bottom:8px;
+}
+.learn-button{
+    margin: 10px 0 0 10px;
+    color:var(--blue);
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    padding-bottom:8px;
+}
+button:hover{
+    background-color: lightblue;
+}
+
+
+
+/* make it responsive */
+/* Is the screen larger than 600 pixels? Make it two columns */
+/* @media screen and (min-width: 600px) {
+    .row-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 400px;;
+        margin-top: 20px;
+    }
+    .second-row-container{
+        grid-template-columns: auto auto;
+        grid-template-rows: 400px;;
+        margin-top: 20px;
+    }
+    .card-container {
+     height:100%;
+     width:100%;
+    }
+}  */
+/* Is the screen less than 600 pixels? Make it 1 columns */
+  /* @media screen and (max-width: 600px) {
+    .row-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 350px;;
+        margin-top: 20px;
+    }
+    .second-row-container{
+        grid-template-columns: auto ;
+        grid-template-rows: 350px;;
+        margin-top: 20px;
+    }
+    .card-container {
+     height:100%;
+     width:100%;
+    }
+  } */
